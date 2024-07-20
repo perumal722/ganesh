@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Water Quality Monitoring System</h1>
+    <div class="container">
+        <form id="dataForm">
+            <label for="humidity">Humidity:</label>
+            <input type="number" id="humidity" name="humidity" required>
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" name="temperature" required>
+            <label for="turbidity">Turbidity:</label>
+            <input type="number" id="turbidity" name="turbidity" required>
+            <label for="ph">pH:</label>
+            <input type="number" id="ph" name="ph" required>
+            <label for="conductivity">Conductivity:</label>
+            <input type="number" id="conductivity" name="conductivity" required>
+            <button type="submit">Submit Data</button>
+        </form>
+        <div id="dataDisplay"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
